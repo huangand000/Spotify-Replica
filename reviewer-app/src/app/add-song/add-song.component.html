@@ -1,0 +1,24 @@
+<h1>Add A Song</h1>
+
+<form (submit)='add()'>
+  <table>
+    <tbody>
+      <tr>
+        <td>Artist: </td>
+        <td><input type='text' [(ngModel)]='song.artist' name='song.artist'></td>
+      </tr>
+      <tr>
+        <td>Song Name:</td>
+        <td><input type='text' [(ngModel)]='song.name' name='song.name'></td>
+      </tr>
+      <tr>
+        <td>Album:</td>
+        <td><input type='text' [(ngModel)]='song.album' name='song.album'></td>
+      </tr>
+        <td><input type='submit' name='Add'></td>
+      <tr>
+      </tr>
+    </tbody>
+  </table>
+</form>
+

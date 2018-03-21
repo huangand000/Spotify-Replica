@@ -1,0 +1,10 @@
+.addS {
+    height: auto;
+    width: 300px;
+    margin: 20px;
+    position: absolute;
+    left: 430px;
+    bottom: 500px;
+    border-left: 2px solid black;
+    padding-left: 20px;
+}

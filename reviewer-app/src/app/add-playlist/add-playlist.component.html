@@ -1,0 +1,22 @@
+<h1>Add a Playlist</h1>
+<h2>Playlist Name: <input type='text' [(ngModel)]='listName' name='listName'></h2>
+
+<div *ngFor='let song of mySongs, let i = index'>
+    {{i + 1}} - Song name: <input type='text' [(ngModel)]='song.name' name='song.name'>
+    By: <input type='text' [(ngModel)]='song.name' name='song.user_name'>
+    <button (click)='removeSong(song.id)'>-</button>
+</div>
+<button (click)='createPlaylist()'>Create</button>
+
+
+<div class='addS'>
+  <table *ngFor='let song of allSongs'>
+    <tbody>
+      <tr>
+        <button (click)='addSong(song._id, song.name, song.artist, song.album, song.user_name)'>+</button>
+        <td>Song Name: {{song.name}}</td>
+        <td>By: {{song.user_name}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,10 @@
+<h1>Dojo Noise</h1>
+<button class='logout' (click)='logout()'>Logout</button>
+<h2>Top Playlists</h2>
+<div *ngFor='let playlist of allPlaylists, let i = index'> 
+  <h4>{{i + 1}}.  <a [routerLink]="['/playlist', playlist._id]">{{playlist.listName}}</a> By: {{playlist.user_name}} Average Ratings: {{playlist.overallRatings}}</h4>
+</div>
+
+
+<button class='addS' [routerLink]="['/addSong']">Add Song</button>
+<button class='addP' [routerLink]="['/addPlaylist']">Add Playlist</button>

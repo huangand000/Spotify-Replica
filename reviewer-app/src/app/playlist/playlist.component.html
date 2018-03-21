@@ -1,0 +1,26 @@
+<h2>{{playlist?.listName}} by: {{playlist?.user_name}}</h2>
+<div *ngFor='let song of playlist?.songs, let i = index'>
+<p>{{i + 1}} - Song Name: {{song.name}}</p>
+</div>
+
+<form (submit)='addComment()'>
+<p>Comment: <input type='text' [(ngModel)]='comment.comment' name='comment.comment'></p>
+<p>Rate:
+  <select [(ngModel)]='comment.rating' name='comment.rating'>
+    <option>5</option>
+    <option>4</option>
+    <option>3</option>
+    <option>2</option>
+    <option>1</option>
+  </select>
+</p>
+<input type='submit' value='RATE'>
+</form>
+
+<br>
+
+<div *ngFor='let c of allComments'>
+<p>{{c.comment}}</p>
+<p>Rating: {{c.rating}}</p>
+<p> - {{c.user_name}}</p>
+</div>

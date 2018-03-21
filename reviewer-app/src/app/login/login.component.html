@@ -1,0 +1,51 @@
+<form class='login'(submit)='login()'>
+  <table>
+    <tbody>
+      <tr>
+        <td>Email:</td>
+        <td><input type='text' [(ngModel)]= 'loginfo.email' name='loginfo.name'></td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td><input type='text' [(ngModel)]= 'loginfo.password' name='loginfo.password'></td>
+      </tr>
+      <tr>
+          <td><input type='submit' value='login'></td>
+      </tr>
+    </tbody>
+  </table>
+  {{ errors }}
+</form>
+
+<br>
+
+<form class='register' (submit)='register()'>
+  <table>
+    <tbody>
+      <tr>
+        <td>First Name:</td>
+        <td><input type='text' [(ngModel)]= 'user.first_name' name='user.first_name'></td>
+      </tr>
+      <tr>
+          <td>Last Name:</td>
+          <td> <input type='text' [(ngModel)]= 'user.last_name' name='user.last_name'></td>
+      </tr>
+      <tr>
+          <td>Email:</td>
+          <td><input type='text' [(ngModel)]= 'user.email' name='user.email'></td>
+      </tr>
+      <tr>
+          <td>Password:</td>
+          <td><input type='text' [(ngModel)]= 'user.password' name='user.password'></td>
+      </tr>
+      <tr>
+          <td>Password Confirmation:</td>
+          <td><input type='text' [(ngModel)]= 'user.passwordConfirm' name='user.passwordConfirm'></td>
+      </tr>
+      <tr>
+          <td><input type='submit' value='Register'></td>
+      </tr>
+    </tbody>
+  </table>
+  <p>{{ regErrors }}</p>
+</form>
