@@ -2,7 +2,7 @@ Spotify-Replica
 ==============
 A simple (MEAN) full-stack website using MongoDB as the Database, Angular as the Front-end framework, Express as the Back-end framework,  and Node.js for server-side Javascript runtime.
 
-A spotify mock website that includes the functionalities of:
+A Spotify/Music mock website that includes the functionalities of:
 ===========
 1) User Login/Registration component
 2) Add a Song component that links with the specific user that created it
