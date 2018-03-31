@@ -1,8 +1,10 @@
-Spotify-Replica
+Spotify/Music Manager Replica
 ==============
 A simple (MEAN) full-stack website using MongoDB as the Database, Angular as the Front-end framework, Express as the Back-end framework,  and Node.js for server-side Javascript runtime.
 
-A Spotify/Music mock website with the functionalities of:
+Completion Time: 2 hours
+
+Features:
 ===========
 1) User Login/Registration component
 2) Add a Song component that links with the specific user that created it
