@@ -10,6 +10,7 @@ Features:
 2) Add a Song component that links with the specific user that created it
 3) Add a Playlist component that links with the specific user that created it
 4) A Comments/Rating component for each playlist as well as average ratings displayed
+5) Temporary deployment on AWS
 5) Minimal css applied (functionality only)
 
 To Use:
