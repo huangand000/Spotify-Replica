@@ -6,7 +6,7 @@ Completion Time: 2 hours
 
 Features:
 ===========
-1) User Login/Registration component
+1) User Login/Registration component with validations
 2) Add a Song component that links with the specific user that created it
 3) Add a Playlist component that links with the specific user that created it
 4) A Comments/Rating component for each playlist as well as average ratings displayed
